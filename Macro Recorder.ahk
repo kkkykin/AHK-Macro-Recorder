@@ -205,7 +205,7 @@ EditKeyAction() {
   } catch OSError as err {
     
   }
-  Run("`"" EnvGet("LocalAppData") "\Programs\Microsoft VS Code\Code.exe`" `"" LogFile "`"")
+  Run("emacsclient.exe -n " LogFile)
   return
 }
 
